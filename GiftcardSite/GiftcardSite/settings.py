@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'kmgysa#fz+9(z1*=c0ydrjizk*7sthm2ga1z4=^61$cxcq8b$l'
+#os.environ.get('DjangoSecret')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -131,7 +131,7 @@ CSS_ROOT = os.path.join(BASE_DIR, "templates/css")
 FONT_ROOT = os.path.join(BASE_DIR, "templates/fonts")
 
 # Random Seed for testing
-RANDOM_SEED = base64.b64decode("2RUHYAyJWdDdXOicZfnTRw==")
+RANDOM_SEED = base64.b64decode() #Password Salting Fixed
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
