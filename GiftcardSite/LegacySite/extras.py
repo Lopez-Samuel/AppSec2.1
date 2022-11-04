@@ -10,7 +10,7 @@ CARD_PARSER = 'giftcardreader'
 # KG: Something seems fishy here. Why are we seeding here?
 def generate_salt(length, debug=True):
     import random
-    random.seed(SEED)
+    random.seed()
     return hexlify(random.randint(0, 2**length-1).to_bytes(length, byteorder='big'))
 
 def hash_pword(salt, pword):
