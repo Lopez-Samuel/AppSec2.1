@@ -16,7 +16,6 @@ import base64
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -130,7 +129,7 @@ CSS_ROOT = os.path.join(BASE_DIR, "templates/css")
 FONT_ROOT = os.path.join(BASE_DIR, "templates/fonts")
 
 # Random Seed for testing
-RANDOM_SEED = base64.b64decode() #Password Salting Fixed
+RANDOM_SEED = base64.b64decode("2RUHYAyJWdDdXOicZfnTRw==")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
